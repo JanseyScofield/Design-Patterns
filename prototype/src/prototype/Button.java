@@ -1,6 +1,8 @@
 package prototype;
 
-public class Button implements Clonable{
+import prototype.colorful.Colorful;
+
+public class Button implements Colorful{
 	private String color;
 	private int width;
 	private int height;
@@ -33,7 +35,7 @@ public class Button implements Clonable{
 	}
 	
 	@Override
-	public Clonable copy() {
+	public Button clone() {
 		return new Button(this);
 	}
 }

@@ -1,6 +1,8 @@
 package prototype;
 
-public class Car implements Clonable {
+import prototype.colorful.Colorful;
+
+public class Car implements Colorful{
 	private String color;
 	private String brand;
 	private int year;
@@ -33,7 +35,7 @@ public class Car implements Clonable {
 	}
 
 	@Override
-	public Clonable copy() {
+	public Car clone() {
 		return new Car(this);
 	}
 
