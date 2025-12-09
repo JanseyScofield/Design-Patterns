@@ -27,9 +27,10 @@ public class Region implements ForestElement{
 	
 	@Override
 	public void render() {
+		System.out.println("------------Drawing: " + this.name + "------------");
 		for(ForestElement child : this.children) {
 			child.render();
 		}
-		System.out.println("Drawing: " + this.name);
+		System.out.println("----------Finish " + this.name + "--------------");
 	}
 }
